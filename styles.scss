@@ -58,12 +58,24 @@ $azul: #00214d;
 	}
 }
 
+.series-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Ibarra Real Nova', serif;
+		font-size: 4em;
+		margin-top: 50%;
+}
+
 .container {
 	display: flex;
-	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
 	margin: 4% 0% 0% 0%;
+}
+
+.contact-container {
+	margin: 5% 0% 30% 0%;
 }
 
 .row {
@@ -91,6 +103,14 @@ $azul: #00214d;
 			color: #FFFFFF;
 		}
 	}
+}
+
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Ibarra Real Nova', serif;
+	font-size: 1em;
 }
 
 
