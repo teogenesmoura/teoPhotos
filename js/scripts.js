@@ -24,6 +24,7 @@ var replacePhotoByPrevious = function(photoEssay) {
 	$(".wrapper").empty().html('<img src="img/passage/' + passage_current_photo + '.jpg"/>');
 }
 
+
 var replacePhotoByNext = function(photoEssay) {
 	passage_current_photo = passage_current_photo + 1;
 	$(".wrapper").empty().html('<img src="img/passage/' + passage_current_photo + '.jpg"/>');
