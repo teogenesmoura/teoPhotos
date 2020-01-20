@@ -58,59 +58,96 @@ $azul: #00214d;
 	}
 }
 
+// .container {
+// 	display: flex;
+// }
+
+// .row {
+// 	margin: 1% 1% 1% 1%;
+// 	height: 90vh;
+// 	margin-bottom: 5%;
+// 	background-color: #FFFFFF;
+// 	color: $azul;
+
+// 	&.dark-mode { 
+// 		background-color: $azul;
+// 		color: #FFFFFF;
+// 	}
+
+// 	& > .series-title {
+// 		display: flex;
+// 		font-family: 'Ibarra Real Nova', serif;
+// 		font-size: 2.5em;
+// 	}
+// }
+
+// .arrow {
+//  width: 30px;
+//  height: 30px;
+//  border-color: $azul;
+//  position: absolute;
+//  margin-top: -31px;
+// 	&.prev {
+// 		border-bottom: 6px solid;
+// 		border-left: 6px solid;
+// 		transform: rotate(45deg);
+// 		left: 10px;
+// 	   	margin: 0% 0% 0% 15%;
+// 	}
+// 	&.next {
+// 		border-bottom: 4px solid;
+// 		border-left: 4px solid;
+// 		transform: rotate(-135deg);
+// 		margin: 0% 15% 0% 0%;
+// 		right: 10px;
+// 		&.dark-mode { 
+// 		 	border-color: #FFFFFF;
+// 		 }
+// 	}
+// }
+
 .container {
 	display: flex;
-	margin: 3% 0% 5% 0%;
-	height: 90vh;
 	align-items: center;
 	justify-content: center;
+}
+.row {
+	margin: 1% 1% 1% 1%;
+	height: 90vh;
 	margin-bottom: 5%;
 	background-color: #FFFFFF;
 	color: $azul;
-
-	&.dark-mode { 
-		background-color: $azul;
-		color: #FFFFFF;
+	display: flex;
+	img {
+		max-width: 800px;
 	}
-
-	& > .series-title {
-		display: flex;
-		font-family: 'Ibarra Real Nova', serif;
-		font-size: 2.5em;
-	}
-
-	&.content {
-		img {
-		    max-width: 100%;
-		    max-height: 100%;
+	.arrow {
+		width: 30px;
+		height: 30px;
+		border-color: $azul;
+		margin-top: -31px;
+		&.prev {
+			border-bottom: 6px solid;
+			border-left: 6px solid;
+			transform: rotate(45deg);
+			left: 10px;
+			margin: 0% 0% 0% 15%;
+			align-self: start;
+		}
+		&.next {
+			border-bottom: 4px solid;
+			border-left: 4px solid;
+			transform: rotate(-135deg);
+			margin: 0% 15% 0% 0%;
+			right: 10px;
+			align-self: end;
+		&.dark-mode { 
+			border-color: #FFFFFF;
+			}
 		}
 	}
 }
 
-.arrow {
- width: 30px;
- height: 30px;
- border-color: $azul;
- position: absolute;
- margin-top: -31px;
-	&.prev {
-		border-bottom: 6px solid;
-		border-left: 6px solid;
-		transform: rotate(45deg);
-		left: 10px;
-	   	margin: 0% 0% 0% 15%;
-	}
-	&.next {
-	   border-bottom: 4px solid;
-	   border-left: 4px solid;
-	   transform: rotate(-135deg);
-	   margin: 0% 15% 0% 0%;
-	   right: 10px;
-	   &.dark-mode { 
-	   		border-color: #FFFFFF;
-	    }
-	}
-}
 .footer {
 	display: flex;
 	align-items: center;
