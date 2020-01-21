@@ -3,15 +3,11 @@
   padding: 0;
   box-sizing: border-box; }
 
-.fadein {
-  opacity: 0;
-  -moz-transition: opacity 1.5s;
-  -webkit-transition: opacity 1.5s;
-  -o-transition: opacity 1.5s;
-  transition: opacity 1.5s; }
-
-body.loaded .fadein {
-  opacity: 1; }
+.fade {
+  opacity: 1;
+  transition: all 0.3s ease; }
+  .fade:hover {
+    opacity: 0.5; }
 
 .menu {
   display: flex;
@@ -63,6 +59,8 @@ body.loaded .fadein {
   font-family: 'Ibarra Real Nova', serif;
   font-size: 4em;
   margin-top: 50%; }
+  .series-title:hover {
+    cursor: pointer; }
 
 .container {
   display: flex;
@@ -79,7 +77,8 @@ body.loaded .fadein {
   margin-bottom: 1%; }
   .row img {
     width: auto;
-    max-height: 70vh; }
+    max-height: 70vh;
+    transition: all 0.3s ease; }
 
 .navigation {
   display: flex;
