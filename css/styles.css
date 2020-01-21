@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+.fadein {
+  opacity: 0;
+  -moz-transition: opacity 1.5s;
+  -webkit-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+  transition: opacity 1.5s; }
+
+body.loaded .fadein {
+  opacity: 1; }
+
 .menu {
   display: flex;
   background-color: #fffffe;
@@ -64,9 +74,9 @@
   margin: 5% 0% 30% 0%; }
 
 .row {
-  height: 80vh;
   background-color: #FFFFFF;
-  color: #00214d; }
+  color: #00214d;
+  margin-bottom: 1%; }
   .row img {
     width: auto;
     max-height: 70vh; }
@@ -93,11 +103,13 @@
   font-size: 1em; }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
   font-family: 'Ibarra Real Nova', serif;
   font-size: 1em;
-  margin: 3% 0% 5% 0%; }
+  margin: 3% 0% 3% 0%; }
 
 /*# sourceMappingURL=styles.css.map */

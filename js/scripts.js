@@ -1,16 +1,20 @@
+const dir = '../img/golden-cage';
 var passage_current_photo = 0;
 var passage_length = 7;
 var cage_current_photo = 0;
 var cage_length = 15;
 
 $(document).ready(function() {
-	$(".wrapper").html('<div class="series-title"> Golden Cage </div>');
+	appendTitleToInitialScreen();
 });
+
 
 $("#prev").click(function() {
 	event.preventDefault();
 	if(cage_current_photo > 1) {
 		replacePhotoByPrevious("golden-cage");
+	} else {
+		appendTitleToInitialScreen();
 	}
 });
 
@@ -18,8 +22,15 @@ $("#next").click(function() {
 	event.preventDefault();
 	if(cage_current_photo != cage_length) {
 		replacePhotoByNext("golden-cage");
+	} else {
+		cage_current_photo = 0;
+		appendTitleToInitialScreen();
 	}
 })
+
+var appendTitleToInitialScreen = function() {
+	$(".wrapper").empty().html('<div class="series-title"> Golden Cage </div>');
+}
 
 var replacePhotoByPrevious = function(photoEssay) {
 	cage_current_photo = cage_current_photo - 1;
