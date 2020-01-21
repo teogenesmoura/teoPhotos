@@ -2,7 +2,7 @@ const dir = '../img/golden-cage';
 var passage_current_photo = 0;
 var passage_length = 7;
 var cage_current_photo = 0;
-var cage_length = 15;
+var cage_length = 14;
 
 $(document).ready(function() {
 	initialScreen();
