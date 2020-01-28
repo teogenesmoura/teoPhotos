@@ -28,6 +28,9 @@
       text-decoration: none;
       font-weight: 100;
       margin: 0 5% 0 5%; }
+      .menu .items a:hover {
+        background-color: #00214d;
+        color: #FFFFFF; }
   @media only screen and (min-width: 468px) {
     .menu {
       justify-content: center;
