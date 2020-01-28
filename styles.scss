@@ -65,6 +65,18 @@ $azul: #00214d;
 	}
 }
 
+a {
+	font-family: 'Public Sans', sans-serif;
+	color: $azul;
+	text-decoration: none;
+	font-weight: 300;
+	margin: 0% 1% 0% 1%;
+	&:hover {
+		background-color: $azul;
+		color: #FFFFFF;
+	}
+}
+	
 .series-title {
 		display: flex;
 		justify-content: center;
@@ -90,10 +102,12 @@ $azul: #00214d;
 	justify-content: center;
 	align-items: center;
 	margin: 4% 0% 0% 0%;
-}
-
-.contact-container {
-	margin: 5% 0% 30% 0%;
+		& p {
+		margin: 4% 20% 2% 20%;
+		font-family: 'Ibarra Real Nova', serif;
+		font-size: 1em;		
+		text-align: justify;
+	}
 }
 
 .row {
@@ -110,25 +124,6 @@ $azul: #00214d;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	a {
-		font-family: 'Public Sans', sans-serif;
-		color: $azul;
-		text-decoration: none;
-		font-weight: 300;
-		margin: 0% 1% 0% 1%;
-		&:hover {
-			background-color: $azul;
-			color: #FFFFFF;
-		}
-	}
-}
-
-.contact {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Ibarra Real Nova', serif;
-	font-size: 1em;
 }
 
 .footer {
